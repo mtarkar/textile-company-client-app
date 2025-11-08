@@ -1,0 +1,83 @@
+/* Header main container */
+.header {
+    background: linear-gradient(90deg, #7f00ff, #e100ff);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    padding: 1rem 0;
+    position: relative;
+    z-index: 10;
+}
+
+/* Inner content */
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo styling */
+.header-logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation links */
+.header-nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* Individual nav link */
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Underline animation on hover */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    left: 0;
+    bottom: -4px;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Slight glow on hover */
+.nav-link:hover {
+    color: #ffedcc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-nav {
+        margin-top: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-link {
+        margin: 0.5rem;
+    }
+}

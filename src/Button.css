@@ -1,0 +1,64 @@
+/* Base button styling */
+.btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.6rem 1.4rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+/* ----- Variants ----- */
+
+/* Primary: Deep gradient for brand actions */
+.btn-primary {
+    background: linear-gradient(90deg, #7b599f, #b685bd);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #6a00d4, #c600e0);
+    box-shadow: 0 4px 12px rgba(161, 0, 255, 0.4);
+}
+
+/* Secondary: Subtle grey for neutral actions */
+.btn-secondary {
+    background: #f4f4f4;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.btn-secondary:hover {
+    background: #e9e9e9;
+}
+
+/* Danger: Red gradient for destructive actions */
+.btn-danger {
+    background: linear-gradient(90deg, #ff4b2b, #ff416c);
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(90deg, #e83e26, #f5365c);
+    box-shadow: 0 4px 12px rgba(255, 65, 108, 0.4);
+}
+
+/* Warning: Golden hue for alerts or confirmations */
+.btn-warning {
+    background: linear-gradient(90deg, #f5b301, #ffdd00);
+    color: #333;
+}
+
+.btn-warning:hover {
+    background: linear-gradient(90deg, #e0a800, #ffd000);
+    box-shadow: 0 4px 12px rgba(255, 204, 0, 0.4);
+}
+
+/* Disabled state */
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
